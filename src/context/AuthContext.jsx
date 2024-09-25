@@ -13,7 +13,7 @@ export const EcommerceAuthProvider = ({ children }) => {
         const token = localStorage.getItem('token');
         if (token) {
           const response = await axios.get(
-            'http://localhost:3000/api/auth/user/details',
+            'https://e-commerce-be-6jj0.onrender.com/api/auth/user/details',
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -34,9 +34,9 @@ export const EcommerceAuthProvider = ({ children }) => {
 
   const login = async (credentials) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/login', credentials);
+      const response = await axios.post('https://e-commerce-be-6jj0.onrender.com/api/auth/login', credentials);
       localStorage.setItem('token', response.data.token);
-      const userResponse = await axios.get('http://localhost:3000/api/auth/user/details', {
+      const userResponse = await axios.get('https://e-commerce-be-6jj0.onrender.com/api/auth/user/details', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
