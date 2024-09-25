@@ -1,0 +1,22 @@
+.admin-text{
+    font-weight: 700;
+}
+
+#login-form-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#login-form label{
+  font-weight: 600;
+}
+
+.email-input,
+.password-input {
+  border: 2px solid black;
+}
+
+.login-btn{
+  font-weight: 600;
+}

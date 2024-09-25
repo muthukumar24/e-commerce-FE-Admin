@@ -1,0 +1,22 @@
+.product-form-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+.product-form label{
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.add-product-text{
+    font-weight: 700;
+}
+
+.product-form input{
+    border: 2px solid black;
+}
+
+.product-form textarea{
+    border: 2px solid black;
+}
