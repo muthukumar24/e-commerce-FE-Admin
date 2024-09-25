@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import '../NavBar/NavBar.css'
 import { useNavigate } from 'react-router-dom';
-import { EcommerceAuthContext } from '../../context/authContext';
+import { EcommerceAuthContext } from '../../context/AuthContext.jsx';
 
 function Navbar() {
   const { user, logout } = useContext(EcommerceAuthContext);

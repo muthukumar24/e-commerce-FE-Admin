@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import '../Products/ProductForm.css'
-import { ProductContext } from '../../context/ProductContext'; // Update the path as necessary
+import { ProductContext } from '../../context/ProductContext.jsx'; // Update the path as necessary
 
 const ProductForm = () => {
   const { addProduct } = useContext(ProductContext);

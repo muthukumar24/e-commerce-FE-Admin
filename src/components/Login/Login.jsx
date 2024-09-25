@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import '../Login/Login.css'
 import { useNavigate } from 'react-router-dom';
-import { EcommerceAuthContext } from '../../context/AuthContext';
+import { EcommerceAuthContext } from '../../context/AuthContext.jsx';
 
 const LoginForm = () => {
   const { login } = useContext(EcommerceAuthContext);
