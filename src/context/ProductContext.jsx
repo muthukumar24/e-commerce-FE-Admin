@@ -48,7 +48,7 @@ export const ProductProvider = ({ children }) => {
         }
       }
 
-      const response = await axios.post('http://localhost:3000/api/products', formData, {
+      const response = await axios.post('https://e-commerce-be-6jj0.onrender.com/api/products', formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           'Content-Type': 'multipart/form-data',
