@@ -63,27 +63,8 @@ export const ProductProvider = ({ children }) => {
     }
   };
 
-  const getInventoryById = async (id) => {
-    try {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        throw new Error('No token found');
-      }
-
-      const response = await axios.get(`http://localhost:3000/api/products/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      return response.data;
-    } catch (error) {
-      console.error('Error fetching product by ID:', error.response ? error.response.data : error.message);
-      throw error;
-    }
-  };
-
   return (
-    <ProductContext.Provider value={{ products, addProduct, getInventoryById }}>
+    <ProductContext.Provider value={{ products, addProduct }}>
       {children}
     </ProductContext.Provider>
   );
